@@ -1,0 +1,14 @@
+{
+  "name": "RealTimeWebChat",
+  "version": "0.1.0",
+  "description": "Real Time Web Chat",
+  "author": "Cao",
+  "dependencies": {
+    "express": "latest",
+    "pug": "^2.0.0-beta6",
+    "socket.io": "latest"
+  },
+  "scripts": {
+    "dev": "node index"
+  }
+}

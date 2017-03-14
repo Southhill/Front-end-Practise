@@ -1,0 +1,6 @@
+#folder
+node_modules/
+.git/
+
+#file
+*.log
