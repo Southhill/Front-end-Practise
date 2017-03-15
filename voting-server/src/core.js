@@ -12,11 +12,11 @@ function getWinner(vote) {
     const aVotes = vote.getIn(['tally', a], 0);
     const bVotes = vote.getIn(['tally', b], 0);
     if (aVotes > bVotes) {
-        return [aVotes];
+        return [a];
     } else if (aVotes < bVotes) {
-        return [bVotes];
+        return [b];
     } else {
-        return [aVotes, bVotes];
+        return [a, b];
     }
 }
 export function next(state) {
