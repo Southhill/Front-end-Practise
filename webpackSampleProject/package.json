@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --progress",
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
-  "author": "ccaoee",
+  "author": "Cao",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
