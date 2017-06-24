@@ -13,3 +13,7 @@
 ## vote（voting-server && voting-client）
 Redux+React+Immutable 实战
 [参考地址：中文](http://www.kancloud.cn/digest/redux/71554),[原文地址：英文](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
+
+## 写一个你自己的jQuery库
+如何写一个你自己的jQuery库？
+[原文链接](https://github.com/Lucifier129/Lucifier129.github.io/blob/master/lab/build-your-own-jquery-library.md)
