@@ -1,4 +1,4 @@
-// 学习参考，via:https://www.lingchenxuan.com/2017/06/26/后台类系统组件-通知/
+// 学习参考，via:https://www.lingchenxuan.com/2017/06/26/后台类系统组件—通知/
 class Notify {
     constructor() {
         this.createContainer()

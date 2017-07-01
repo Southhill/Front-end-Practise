@@ -19,4 +19,4 @@ Redux+React+Immutable 实战
 [原文链接](https://github.com/Lucifier129/Lucifier129.github.io/blob/master/lab/build-your-own-jquery-library.md)
 
 ## 开发通知组件
-写一个通知组件。 [原文链接](https://www.lingchenxuan.com/2017/06/26/后台类系统组件-通知/)
+写一个通知组件。 [原文链接](https://www.lingchenxuan.com/2017/06/26/后台类系统组件—通知/) 主要为实践ES6的Class用法及HTML‘s API。
