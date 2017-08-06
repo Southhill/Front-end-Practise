@@ -260,6 +260,94 @@
                     classList.remove(value);
                 });
             });
+        },
+        getJSON: function(url, cbs, cbf) {
+            if (typeof url !== 'string') {
+                return this;
+            }
+            var request = new XMLHttpRequest();
+            request.open('GET', url, true);
+
+            request.onload = function() {
+                if (request.status >= 200 && request.status <400) {
+                    var data = JSON.parse(request.responseText);
+                    if (typeof cbs === 'function') {
+                        cbs(data);
+                    }
+                } else {
+                }
+            };
+            request.onerror = function(err) {
+                if (typeof cbf === 'function') {
+                    cbf(err);
+                }
+            };
+            request.send();
+        },
+        hide: function() {
+            this[0].style.display = 'none';
+        },
+        show: function() {
+            this[0].style.display = '';
+        },
+        fadeIn: function() {
+            this.style.opacity = 0;
+            var last = +new Date();
+            var self = this;
+
+            var tick = function() {
+                self.style.opacity = +self.style.opacity + (new Date() - last) / 400;
+                if (+self.style.opacity < 1) {
+                    (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+                }
+            }
+
+            tick();
+        },
+        after: function(htmlStr) {
+            if (typeof htmlStr !== 'string') return this;
+            this[0].insertAdjacentHTML('afterend', htmlStr);
+            return this;
+        },
+        before: function(htmlStr) {
+            if (typeof htmlStr !== 'string') return this;
+            this[0].insertAdjacentHTML('beforebegin', htmlStr);
+            return this;
+        },
+        chileren: function() {
+            return this[0].children;
+        },
+        clone: function() {
+            return this[0].cloneNode(true);
+        },
+        empty: function() {
+            this[0].innerHTML = '';
+            return this;
+        },
+        html: function(str) {
+            if (typeof str === 'undefined') {
+                return this[0].innerHTML;
+            } else {
+                str = str.toString();
+                this[0].innerHTML = str;
+                return this;
+            }
+        },
+        trigger: function(str) {
+            if (str === 'undefined') return;
+            var event = document.createEvent('HTMLEvents');
+            event.initEvent(str, true, false);
+            this[0].dispatchEvent(event);
+        },
+        type: function(obj) {
+            return Object.prototype.toString.call(obj).replace(/^\[object (.+)\]$/g, '$1').toLowerCase();
+        },
+        trim :function(str) {
+            if (str !== 'string') return;
+            return str.trim();
+        },
+        now: function() {
+            return Date.now();
         }
     });
 

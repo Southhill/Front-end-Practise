@@ -16,7 +16,8 @@ Redux+React+Immutable 实战
 
 ## 写一个你自己的jQuery库
 如何写一个你自己的jQuery库？
-[原文链接](https://github.com/Lucifier129/Lucifier129.github.io/blob/master/lab/build-your-own-jquery-library.md)
+[原文链接](https://github.com/Lucifier129/Lucifier129.github.io/blob/master/lab/build-your-own-jquery-library.md)，
+You Might not Need jQuery. [原文链接](youmightnotneedjquery.com/)
 
 ## 开发通知组件
 写一个通知组件。 [原文链接](https://www.lingchenxuan.com/2017/06/26/后台类系统组件—通知/) 主要为实践ES6的Class用法及HTML‘s API。
